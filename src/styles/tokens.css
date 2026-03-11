@@ -1,0 +1,118 @@
+/* ============================================================
+   DESIGN TOKENS — the single source of truth for all styles
+   ============================================================ */
+
+:root {
+   /* ── Color Palette ────────────────────────────────────────── */
+   --color-bg: #ffffff;
+   --color-surface: #fafafa;
+   --color-surface-2: #f5f6f8;
+   --color-border: #e6e6e6;
+
+   --color-primary: #F87537;
+   --color-primary-2: #fd7e14;
+   --color-primary-dim: #FBA81F;
+   --color-primary-glow: rgba(248, 117, 55, 0.25);
+
+   --color-accent: #000000;
+   --color-accent-dim: #231F20;
+
+   --color-text: #231F20;
+   --color-text-muted: #5c6470;
+   --color-text-subtle: #8f96a3;
+
+   --color-success: #33cc80;
+   --color-warning: #f5a924;
+   --color-error: #e64d4d;
+
+   /* ── Typography ───────────────────────────────────────────── */
+   --font-primary: 'Poppins', system-ui, -apple-system, sans-serif;
+   --font-secondary: 'Inter', system-ui, -apple-system, sans-serif;
+
+   --text-xs: clamp(0.70rem, 1vw, 0.75rem);
+   --text-sm: clamp(0.82rem, 1vw, 0.875rem);
+   --text-base: clamp(0.95rem, 1vw, 1rem);
+   --text-md: clamp(1.05rem, 1.5vw, 1.250rem);
+   --text-lg: clamp(1.250rem, 2vw, 1.375rem);
+   --text-xl: clamp(1.40rem, 2.5vw, 1.75rem);
+   --text-2xl: clamp(1.80rem, 4vw, 2.5rem);
+   --text-3xl: clamp(2.20rem, 6vw, 3.375rem);
+   --text-4xl: clamp(2.80rem, 8vw, 5rem);
+
+   --weight-regular: 400;
+   --weight-medium: 500;
+   --weight-semibold: 600;
+   --weight-bold: 700;
+
+   --leading-tight: 1.1;
+   --leading-snug: 1.4;
+   --leading-normal: 1.6;
+   --leading-loose: 1.8;
+
+   --tracking-tight: -0.03em;
+   --tracking-normal: 0;
+   --tracking-wide: 0.05em;
+   --tracking-widest: 0.12em;
+
+   /* ── Spacing ──────────────────────────────────────────────── */
+   --space-1: 0.25rem;
+   --space-2: 0.5rem;
+   --space-3: 0.75rem;
+   --space-4: 1rem;
+   --space-5: 1.25rem;
+   --space-6: 1.5rem;
+   --space-8: 2rem;
+   --space-10: 2.5rem;
+   --space-12: 3rem;
+   --space-16: 4rem;
+   --space-20: 5rem;
+   --space-24: 6rem;
+   --space-32: 8rem;
+
+   /* ── Border Radius ────────────────────────────────────────── */
+   --radius-sm: 4px;
+   --radius-md: 8px;
+   --radius-lg: 16px;
+   --radius-xl: 24px;
+   --radius-2xl: 32px;
+   --radius-full: 9999px;
+
+   /* ── Shadows ──────────────────────────────────────────────── */
+   --shadow-sm: 0 1px 4px #0000000d;
+   --shadow-md: 0 4px 16px #00000014;
+   --shadow-lg: 0 8px 32px #0000001f;
+   --shadow-glow: 0 0 32px var(--color-primary-glow);
+
+   /* ── Transitions ──────────────────────────────────────────── */
+   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+   --duration-fast: 150ms;
+   --duration-base: 250ms;
+   --duration-slow: 400ms;
+
+   /* ── Layout ───────────────────────────────────────────────── */
+   --max-width-sm: 640px;
+   --max-width-md: 768px;
+   --max-width-lg: 1024px;
+   --max-width-xl: 1248px;
+   --max-width-2xl: 1320px;
+
+   --header-height: 80px;
+
+   /*
+   * Breakpoints (for reference — CSS custom properties can't be used
+   * in @media queries, so these are documented here as the source of truth):
+   *
+   *   --bp-sm:  640px   (small tablets, large phones landscape)
+   *   --bp-md:  768px   (tablets portrait)
+   *   --bp-lg:  1025px  (tablets landscape / small desktops)
+   *   --bp-xl:  1280px  (desktops)
+   *
+   * Convention: mobile-first with min-width queries.
+   *   @media (min-width: 640px)  { ... }  — sm+
+   *   @media (min-width: 768px)  { ... }  — md+
+   *   @media (min-width: 1025px) { ... }  — lg+ (desktop)
+   *   @media (min-width: 1280px) { ... }  — xl+
+   */
+}

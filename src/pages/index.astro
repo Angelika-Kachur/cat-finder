@@ -1,0 +1,18 @@
+---
+/**
+ * pages/index.astro — Home page
+ */
+import PageLayout from "../layouts/PageLayout.astro";
+import Hero from "../components/astro/Hero.astro";
+import ExplorerSection from "../components/react/ExplorerSection.tsx";
+import TestimonialCarousel from "../components/react/TestimonialCarousel.tsx";
+---
+
+<PageLayout
+	title="Purrfect Breeds — Find the Cat Breed That Matches Your Vibe"
+	description="Explore and compare cat breeds to find the perfect feline companion. Browse by coat type, origin, and more."
+>
+	<Hero />
+	<ExplorerSection client:load />
+	<TestimonialCarousel client:load />
+</PageLayout>

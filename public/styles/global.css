@@ -1,0 +1,74 @@
+/* ============================================================
+   GLOBAL — typography, links, scrollbar, focus rings
+   ============================================================ */
+
+/* ── Focus Ring ───────────────────────────────────────────── */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+}
+
+/* ── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-subtle);
+}
+
+/* ── Selection ────────────────────────────────────────────── */
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+/* ── Global link ──────────────────────────────────────────── */
+a {
+    transition: all ease-out 0.4s;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* ── Code ─────────────────────────────────────────────────── */
+code,
+kbd,
+pre {
+    font-family: var(--font-secondary);
+    font-size: 0.9em;
+}
+
+code {
+    background: var(--color-surface-2);
+    padding: 0.15em 0.4em;
+    border-radius: var(--radius-sm);
+    color: var(--color-accent);
+}
+
+pre {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    overflow-x: auto;
+}
+
+/* ── Gradient text helper ─────────────────────────────────── */
+.gradient-text {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

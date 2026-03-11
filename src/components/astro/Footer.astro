@@ -1,0 +1,270 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer" role="contentinfo">
+    <div class="footer__bg-container" aria-hidden="true">
+        <img
+            src="/images/footer-bg.png"
+            alt=""
+            class="footer__bg-img"
+            loading="lazy"
+            width="1440"
+            height="400"
+        />
+    </div>
+
+    <div class="container footer__content">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img
+                    src="/images/logo-dark.svg"
+                    alt="Purrfect Breeds"
+                    class="footer__logo-img"
+                    width="160"
+                    height="48"
+                />
+                <p class="font-medium footer__description">
+                    Sed viverra eget fames sit varius. Pellentesque mattis
+                    libero viverra dictumst ornare sed justo convallis vitae
+                </p>
+
+                <ul class="social-icons" aria-label="Social media links">
+                    <li>
+                        <a
+                            href="https://facebook.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-icon"
+                            aria-label="Facebook"
+                        >
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://instagram.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-icon"
+                            aria-label="Instagram"
+                        >
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://twitter.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-icon"
+                            aria-label="X (Twitter)"
+                        >
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.005 4.15H5.059z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://youtube.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-icon"
+                            aria-label="YouTube"
+                        >
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer__links-col">
+                    <h3 class="heading font-bold text-base">Company</h3>
+                    <ul class="flex flex-col gap-3 font-medium text-sm">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links-col">
+                    <h3 class="heading font-bold text-base">Useful Links</h3>
+                    <ul class="flex flex-col gap-3 font-medium text-sm">
+                        <li><a href="#">Most popular</a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links-col">
+                    <h3 class="heading font-bold text-base">Customer Service</h3>
+                    <ul class="flex flex-col gap-3 font-medium text-sm">
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__bottom text-center text-sm font-medium">
+            &copy; Copyright Purrfect breeds {year}. Design by Verda Cloud Oy
+        </p>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background: linear-gradient(45deg, #f87537 0%, #fba81f 100%);
+        padding-top: var(--space-20);
+        padding-bottom: var(--space-8);
+        position: relative;
+        overflow: hidden;
+        margin-top: auto;
+        text-align: center;
+    }
+
+    .footer__bg-container {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+    .footer__bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .footer__content {
+        position: relative;
+        z-index: 3;
+    }
+
+    .footer__description {
+        font-size: var(--text-sm);
+        color: var(--color-accent);
+        margin-bottom: var(--space-6);
+        line-height: var(--leading-normal);
+        padding-right: var(--space-5);
+    }
+
+    .footer__bottom {
+        padding-top: var(--space-6);
+        color: var(--color-text);
+    }
+
+    .footer__inner {
+        padding-bottom: var(--space-10);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-12);
+    }
+
+    .footer__brand {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .footer__logo-img {
+        display: inline-block;
+        margin: 0 0 var(--space-4);
+    }
+
+    .social-icons {
+        display: flex;
+        gap: var(--space-4);
+        justify-content: center;
+        list-style: none;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--space-10);
+    }
+
+    .footer__links .heading {
+        margin-bottom: var(--space-4);
+    }
+
+    .footer__links a:hover {
+        color: var(--color-text);
+    }
+
+    .footer__links-col {
+        min-width: 120px;
+    }
+
+    @media (min-width: 640px) {
+        .footer__links {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: var(--space-12);
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .footer {
+            text-align: left;
+        }
+
+        .footer__inner {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .footer__brand {
+            flex: 1 1 300px;
+            max-width: 400px;
+        }
+
+        .social-icons {
+            justify-content: flex-start;
+        }
+
+        .footer__links {
+            flex: 2;
+            justify-content: flex-end;
+        }
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--space-10);
+        height: var(--space-10);
+        background: var(--color-accent);
+        color: var(--color-bg);
+        border-radius: 50%;
+        transition: transform var(--duration-fast) var(--ease-out),
+            background var(--duration-fast) var(--ease-out);
+    }
+
+    .social-icon:hover,
+    .social-icon:focus-visible {
+        transform: scale(1.1);
+        background: var(--color-accent-dim);
+    }
+
+    .social-icon:focus-visible {
+        outline: 2px solid var(--color-bg);
+        outline-offset: 2px;
+    }
+
+    .footer__links a {
+        transition: opacity var(--duration-fast) var(--ease-out);
+    }
+
+    .footer__links a:hover {
+        opacity: 0.7;
+    }
+</style>

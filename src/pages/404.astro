@@ -1,0 +1,41 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout
+    title="404: Page Not Found — Purrfect Breeds"
+    description="The page you are looking for does not exist."
+>
+    <section class="hero" aria-labelledby="error-heading">
+        <div class="hero-bg-container" aria-hidden="true">
+            <img
+                src="/images/hero-bg.png"
+                alt=""
+                class="hero-img"
+                width="1440"
+                height="810"
+            />
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-content-inner">
+                <p class="text-sm font-bold hero-badge">Error 404</p>
+                <h1 id="error-heading" class="hero-title">
+                    Oops! Looks like this cat wandered off.
+                </h1>
+                <p class="hero-subtitle">
+                    The page you are looking for doesn't exist, has been
+                    removed, or is temporarily unavailable. Let's get you back
+                    to safe territory!
+                </p>
+                <a href="/" class="btn btn--dark btn--lg">Back to Homepage</a>
+            </div>
+        </div>
+    </section>
+</PageLayout>
+
+<style>
+    .main {
+        min-height: min-content;
+    }
+</style>

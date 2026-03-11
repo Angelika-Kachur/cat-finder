@@ -1,0 +1,108 @@
+.explorer-section {
+    padding-block: var(--space-16);
+}
+
+/* ── Header ──────────────────────────────────────────────── */
+.explorer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    margin-bottom: var(--space-12);
+}
+
+.explorer-title {
+    font-size: var(--text-2xl);
+    font-weight: var(--weight-bold);
+}
+
+.explorer-actions {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.explorer-search {
+    min-width: 250px;
+}
+
+.explorer-filter-wrapper {
+    position: relative;
+}
+
+.explorer-filter-chevron {
+    transition: transform var(--duration-fast);
+}
+
+.explorer-filter-chevron--open {
+    transform: rotate(180deg);
+}
+
+/* ── Loading / Error ─────────────────────────────────────── */
+.explorer-loading,
+.explorer-error,
+.explorer-empty {
+    text-align: center;
+    padding: var(--space-12);
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+}
+
+/* ── Grid (mobile-first: 2 → 3 → 4 cols) ────────────────── */
+.explorer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    .explorer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .explorer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ── Card (extends .card primitive) ──────────────────────── */
+
+.breed-card-img {
+    width: 100%;
+    aspect-ratio: 1 / 0.76;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    margin-bottom: var(--space-4);
+}
+
+.breed-card-content {
+    padding: 0 var(--space-2) var(--space-2);
+}
+
+.breed-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+}
+
+.breed-card-title {
+    font-size: var(--text-md);
+    font-weight: var(--weight-bold);
+    color: var(--color-text);
+}
+
+.breed-card-tags {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+/* ── Load More ───────────────────────────────────────────── */
+.load-more-container {
+    margin-top: var(--space-16);
+}
