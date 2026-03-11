@@ -4,6 +4,8 @@ A single-page responsive landing page for a fictional product: **Purrfect Breeds
 
 Built with **Astro + TypeScript + React islands**.
 
+---
+
 ## Setup
 
 ```bash
@@ -13,22 +15,32 @@ npm run build      # production build -> dist/
 npm run preview    # preview production build
 ```
 
+---
+
+## Live DEMO
+
+Deployed at: https://cat-finder-ten.vercel.app/
+
+---
+
 ## What was built
 
 ### Page sections
 - **Header** -- responsive nav bar with logo, navigation links, search bar, favorites icon. Collapses to a burger menu + slide-in drawer on tablet (<=1024px)
-- **Hero** -- full-bleed background image with overlay text and "Explore breeds" CTA that scrolls to the breed explorer
+- **Hero** -- background image with overlay text and "Explore breeds" CTA that scrolls to the breed explorer
 - **Breed Explorer** (React island) -- fetches cat breeds from `https://catfact.ninja/breeds`, displays in a responsive grid (4 cols desktop / 3 tablet / 2 mobile), with search-by-name, filter-by-coat dropdown, and "Load more" pagination
 - **Testimonial Carousel** (React island) -- keyboard-accessible horizontal carousel with prev/next controls
 - **Footer** -- brand info, social links, sitemap columns, copyright
+
+---
 
 ### Design system
 
 | Layer | File | Purpose |
 |:------|:-----|:--------|
-| Tokens | `tokens.css` | Color palette, typography scale (clamp-based), spacing, radii, shadows, transitions, breakpoints |
-| Reset | `reset.css` | Modern CSS reset |
-| Global | `global.css` | Focus rings, scrollbar, selection, links, code blocks |
+| Tokens | `tokens.css` | Color palette, typography scale (clamp-based), spacing, radius, shadows, transitions, breakpoints |
+| Reset | `reset.css` | Basic CSS reset |
+| Global | `global.css` | Links, scrollbar, code blocks |
 | Utilities | `utilities.css` | Container, typography, flex/grid helpers, spacing, visibility |
 | Primitives | `primitives.css` | Reusable component patterns (see below) |
 
@@ -42,6 +54,8 @@ npm run preview    # preview production build
 
 All component-level CSS references tokens and primitives; hardcoded values are minimized.
 
+---
+
 ### Accessibility
 - Skip-to-content link
 - Semantic HTML (`<header>`, `<main>`, `<footer>`, `<nav>`, `<section>`, `<article>`, `<blockquote>`)
@@ -51,6 +65,8 @@ All component-level CSS references tokens and primitives; hardcoded values are m
 - Screen reader live regions announce filter result counts
 - Proper `<label>` elements for all inputs (visually hidden where needed)
 
+---
+
 ### SEO
 - Semantic `<title>` and `<meta name="description">` per page
 - Open Graph meta tags (`og:title`, `og:description`, `og:type`, `og:url`)
@@ -58,6 +74,8 @@ All component-level CSS references tokens and primitives; hardcoded values are m
 - `<meta name="theme-color">`
 - Image `width`/`height` attributes for CLS prevention
 - `loading="eager"` + `fetchpriority="high"` on hero; `loading="lazy"` on below-fold images
+
+---
 
 ## Tradeoffs / what I'd improve with more time
 

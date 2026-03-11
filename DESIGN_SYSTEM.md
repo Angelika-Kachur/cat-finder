@@ -10,7 +10,7 @@
 src/styles/
 ├── tokens.css     ← All design tokens (single source of truth)
 ├── reset.css      ← Modern CSS reset
-├── global.css     ← Base styles, focus ring, scrollbar, selection, .gradient-text
+├── global.css     ← Base styles, focus ring, scrollbar, selection
 └── utilities.css  ← Composable utility classes (.container, .flex, .grid, .btn…)
 ```
 
@@ -87,7 +87,6 @@ Fluid type scale driven by `clamp()`:
 ```html
 <p class="text-sm font-semibold text-muted tracking-widest uppercase">
 <h2 class="text-2xl font-bold">
-<span class="gradient-text">  <!-- orange gradient -->
 ```
 
 ### Surfaces
